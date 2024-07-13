@@ -1,0 +1,8 @@
+﻿@model List<Category>
+
+@foreach (var c in Model)
+{
+    <a href="/Product/Index/@c.Id" class="list-group-item" aria-current="true">
+        @c.Name
+    </a>
+}
